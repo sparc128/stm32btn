@@ -28,11 +28,6 @@
       </source>
       <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md_vl.c" lastModified="161e096fb46">
       </source>
-      <source file="..\..\..\main.c" lastModified="161e1370723">
-         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
-         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
-         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
-      </source>
       <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="161e096fb4b">
       </source>
       <source file="..\..\..\stm_lib\inc\stm32f10x_gpio.h" lastModified="161e09816d3">

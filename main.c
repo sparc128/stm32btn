@@ -6,6 +6,7 @@
 int main(void)
 {
   long int i;
+  int h=1;
   GPIO_InitTypeDef GPIO_InitStructure;
 
    RCC_APB2PeriphClockCmd( RCC_APB2Periph_GPIOA | RCC_APB2Periph_GPIOC , ENABLE); // тактирование портов
@@ -23,12 +24,42 @@ int main(void)
 
   while (1) //Trigger
   {
-	  if(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_0)==1)
+
+	  if(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_0)==1 & h==1)
 	  {
-		  GPIO_SetBits(GPIOC, GPIO_Pin_9); //Подаем «1» на GPIO_Pin_9
+		  h=2;
+
+		  //устраняем дребезг кнопки
+		 long int k=0;
+		  while(k<=500000)
+		  {
+			  k++;
+		  }
+		  k=0;
 	  }
-	  else
-		  GPIO_ResetBits(GPIOC, GPIO_Pin_9); //Подаем «0» на GPIO_Pin_9
+
+	  if(GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_0)==1 & h==2)
+	 	  {
+	 		h=1;
+
+	 		//устраняем дребезг кнопки
+	 		long int r=0;
+	 		while(r<=500000)
+	 		{
+	 			r++;
+	 		}
+	 		r=0;
+	 	  }
+
+
+		if (h==1)
+		{
+			GPIO_SetBits(GPIOC, GPIO_Pin_9);
+		}
+		if (h==2)
+		{
+			GPIO_ResetBits(GPIOC, GPIO_Pin_9);
+		}
   }
 }
 
