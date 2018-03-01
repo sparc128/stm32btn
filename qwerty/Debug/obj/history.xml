@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F100RB -DSTM32F10X_MD_VL -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\workspace\qwerty\stm_lib -I..\..\..\workspace\qwerty\stm_lib\inc -I..\..\..\workspace -I..\..\..\workspace\qwerty -I..\..\..\workspace\qwerty\cmsis -I..\..\..\workspace\qwerty\cmsis_boot">
+      <target file="stm32f10x_rcc.o" lastModified="161e0dd5b0b">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="161e09816ee"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="161e0dd5965">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="161e096fb4d"/>
+      </target>
+      <target file="startup_stm32f10x_md_vl.o" lastModified="161e0dd58f8">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md_vl.c" lastModified="161e096fb46"/>
+      </target>
+      <target file="main.o" lastModified="161e1370e6b">
+         <source file="..\..\..\main.c" lastModified="161e1370723"/>
+      </target>
+      <target file="syscalls.o" lastModified="161e0dd5b73">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="161e0971eb1"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="161e0dd59ec">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="161e09816d5"/>
+      </target>
+   </processor>
+</history>
