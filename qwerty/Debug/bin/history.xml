@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="7.2.1 -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=qwerty.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\qwerty -TC:\CooCox\CoIDE\configuration\ProgramData\qwerty/link.ld -g">
-      <target file="qwerty.elf" lastModified="161e1c43462">
+      <target file="qwerty.elf" lastModified="161e561067a">
          <source file="..\obj\startup_stm32f10x_md_vl.o" lastModified="161e0dd58f8"/>
          <source file="..\obj\system_stm32f10x.o" lastModified="161e0dd5965"/>
          <source file="..\obj\stm32f10x_gpio.o" lastModified="161e0dd59ec"/>
-         <source file="..\obj\main.o" lastModified="161e1c43283"/>
+         <source file="..\obj\main.o" lastModified="161e561043f"/>
          <source file="..\obj\stm32f10x_rcc.o" lastModified="161e0dd5b0b"/>
          <source file="..\obj\syscalls.o" lastModified="161e0dd5b73"/>
       </target>
